@@ -1,0 +1,207 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+h1{
+	font-family: 'lato', sans-serif;
+	font-size: 5em;
+	margin-left: 1%;	
+	opacity: 0.7;
+	margin-bottom: 0  ;
+}	
+
+p{
+	font-family: 'lato', sans-serif;
+	font-size: 1em;
+	width: 33.3%;
+	margin-left: 1%;
+}
+
+
+#home {	background-color: black;}
+
+#home_title{
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:  5em;
+	margin-bottom: 10em;
+	background: black;
+}	
+
+.bg_imgs {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+}
+
+
+.bg_imgs img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/*#home_bg{
+	z-index: -1;
+	position: absolute;
+}*/
+
+
+/*=========================Leopard content =====================*/
+
+#leopard_content{
+	position: relative;
+	margin-left: 4%;
+	margin-top: 20%;
+	color: white;
+	padding-left: 5%;
+	padding-top: 22%;
+}
+
+#leopard_images img{
+	width: 13%;
+	position: relative;
+	display:inline-block;
+	padding-bottom: 5%;
+}
+
+#leopard_images{
+	margin-bottom: 10%;
+
+}
+
+
+/*=========================Zebra content =====================*/
+
+#zebra_content{
+	margin-right: 5%;
+	text-align: right;
+	float: right;
+	position: relative;
+	margin-top: 25%;
+	color:white;
+}
+
+#zebra_content > p{
+	color:white;
+	float:right;
+}
+
+#zebra_images img{
+	position: relative;
+	width: 13%;
+	float: right;
+	padding: 0.2%;
+}
+
+#zebra_images {
+	width: 95%;
+}
+
+
+
+
+@media screen and (max-width : 400px) {
+
+
+	body{width: 100%;}
+
+	h1{
+		font-size: 4em;
+		opacity: 0.7;
+		width: 100%;
+		margin: 0 auto;
+	}	
+
+	p{
+		font-size: 1em;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#home_title{
+		width: 100%;
+		margin-top:  5em;
+		margin-bottom: 5em;
+	}	
+
+	.bg_imgs {
+		z-index: 0;
+		position: relative;
+		width: 150%;
+	}
+
+
+	#home img{width: 100%;}	
+	#all_content{width: 100%;}
+	#leopard_content{width:100%;}
+
+	
+
+		/*=========================Leopard content =====================*/
+
+	#leopard_content{
+		width: 100%;
+		margin:0 auto;
+		color: white;
+	}
+
+	#leopard_images img{
+		width: 100%;
+		display:block;
+		padding:0 auto;
+	}
+
+	#leopard_images{
+		margin: 0;
+		width: 100%;
+	}
+
+
+	/*=========================Zebra content =====================*/
+
+	#zebra_content{
+		width: 100%;
+		margin: 0;
+		text-align: left;
+		float: none;
+		position: relative;
+		margin-top: 0;
+		color:white;
+		padding-bottom: 5%;
+	}
+
+	#zebra_content > p{
+		width: 100%;
+		color:white;
+		float:none;
+	}
+
+	#zebra_images img{
+		position: relative;
+		width: 100%;
+		float: none;
+		display: block;
+		padding: 0;
+	}
+
+	#zebra_images {
+		width: 100%;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+

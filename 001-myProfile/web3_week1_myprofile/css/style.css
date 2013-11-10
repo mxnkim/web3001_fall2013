@@ -1,0 +1,92 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *  
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh   
+ */
+
+
+body{
+	margin:0;
+	padding:0;
+}
+
+
+#home { 
+	background: url(../images/bg02.jpg) 50% 0 no-repeat fixed; 
+	height: 1200px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+}
+#content01 { 
+	background: url(../images/bg03.jpg) 50% 0 no-repeat fixed; 
+	height: 1200px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+}
+
+#content02 { 
+	background: url(../images/bg07.jpg) 50% 0 no-repeat fixed; 
+	height: 1200px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+}
+
+
+
+#footer { 
+	background: url(../images/bg_mxn.jpg) 50% 0 no-repeat fixed; 
+	height: 1300px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+}
+
+/* Introduction */
+
+#home article { 
+	background: url("../images/myname.png") no-repeat scroll center top transparent; 
+	height: 100%; 
+	position: absolute; 
+	text-indent: -9999px; 
+	top: 100px; 
+	width: 100%; 
+}
+
+#content01 article { 
+	background: url("../images/content02.png") no-repeat scroll center top transparent; 
+	height: 600px; 
+	position: absolute; 
+	text-indent: -9999px; 
+	top: 400px; 
+	width: 100%; 
+}
+
+#content02 article { 
+	background: url("../images/content03.png") no-repeat scroll center top transparent; 
+	height: 600px; 
+	position: absolute; 
+	text-indent: -9999px; 
+	top: 400px; width: 100%; 
+}
+
+#footer article { 
+	background: url("../images/thank.png") no-repeat scroll center top transparent; 
+	height: 600px; 
+	position: absolute; 
+	text-indent: -9999px; 
+	top: 400px; width: 100%; 
+}
+
+
+
+

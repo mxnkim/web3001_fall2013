@@ -1,0 +1,462 @@
+/*//2013.Oct
+//Web3002 Midterm 
+//Min-Sung Kwak
+//Joori Lee
+//Maxine Kim*/
+
+html{
+   	height: auto !important;
+	margin-right:auto;
+	margin-left:auto;
+	padding:0;
+}
+
+head{
+   	height: auto !important;
+	margin:0;
+	padding:0;
+
+}
+
+body{
+   	height: auto !important;
+	margin:0;
+	padding:0;
+}
+
+/* hiding mobile app images */
+
+.mobile img{
+	  	opacity:0;
+	  	position:absolute;	 
+	  }
+
+.mobileview{
+	opacity:0;
+	z-index: -10000;
+	position:absolute;
+}
+
+
+.main{
+	/*max-width: 1024px; align: center;   
+   	max-height: 768px;*/
+   	height: auto !important;
+	margin:0;
+	padding:0;
+	z-index:1;
+	position: absolute;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+.bg{
+	width:100%;
+	/*height:100%;*/
+	z-index:1;
+	position:absolute;
+	display:block;
+}
+
+
+div.colorBG{
+	width: 100%;
+	height: 140%;
+	z-index: -1;
+	position: absolute;
+	opacity:0.8;
+	display:block;
+}
+
+
+/* wood stand */
+
+img.stand{
+	width: 85%;
+	position: absolute;
+	margin-top: 50.5%;
+	margin-left: 7.5%;
+	z-index: -1;
+	display: block;
+}
+
+
+.menu{
+	position: absolute;
+	margin-top: 25%;
+	text-align: center;
+	padding:0;
+	margin:0;
+	display:block;
+}
+
+#home{
+	position: fixed;
+	width:10%;
+	height:200px;
+	z-index: 2;
+	opacity:0.8;
+    bottom: -50px;
+
+}
+
+
+
+
+/* ============== background color codeing start=================*/
+
+div#stress{
+	background-color: #cfc364;  
+	/*max-width: 1024px; align: 
+	center; Height:768px;*/
+}
+div#aging{
+	background-color: #66005C;  
+	/*max-width: 1024px; 
+	align: center; 
+	Height:768px;*/
+}
+div#immune{
+	background-color: #398420;  
+	/*max-width: 1024px; 
+	align: center; 
+	Height:768px;*/
+}
+div#tired{
+	background-color: #666666;  
+	/*max-width: 1024px; 
+	align: center; 
+	Height:768px;*/
+}
+div#skin{
+	background-color: #000000;  
+	/*max-width: 1024px; 
+	align: center; 
+	Height:768px;*/
+}
+
+/* ======================== Jars line up =================* */
+
+#jars{
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	position: absolute;
+}
+
+#jars img{
+	width: 14%;
+	padding: 0.1em;
+	position: relative;
+	margin-top: 26%;
+	margin-right: auto;
+	margin-left: auto;
+	z-index:2;
+}
+
+/* ========================= Jars Selected blue icons ============================*/
+
+
+#jars_select{
+	width:100%;
+	height: 100%;
+	margin-top: 46%	;
+}
+
+#jars_select img#stress_select{
+	margin-left: 13%;
+}
+
+#jars_select img#aging_select{
+	margin-left: 28%;
+}
+
+#jars_select img#immune_select{
+	margin-left: 43%;
+}
+
+#jars_select img#tired_select{
+	margin-left: 57.5%;
+}
+
+#jars_select img#skin_select{
+	margin-left: 72.5%;
+}
+
+#jars_select img{
+	padding: 4.25%;
+	width: 6%;
+	position: absolute;
+}
+
+/* ======================== pages line up =================* */
+
+.opacity img{
+	width:100%;
+	z-index: -1000;
+	display:block;
+	opacity:0;
+}
+
+.pages{
+	position:relative;
+}
+
+/* stres content page */
+
+#stress_content{
+	width: 100%;
+	position:absolute;
+}
+
+img#stress_page {
+	width:100%;
+	margin: 0;
+	padding:0;
+	display: block;
+	/*position: relative;*/
+
+}
+
+#button1 img{
+ 	position:absolute;
+	margin-top: -50%;
+	padding:0;
+	width: 100%;
+	z-index:1;
+}
+
+#stress_vegefruits img{
+	width: 100%;
+	position: absolute;
+	margin-top: -43%;
+	z-index: 5;
+}
+
+
+
+/* aging content page */
+
+#aging_content{
+	width: 100%;
+	position:absolute;
+}
+
+img#aging_page {
+	width:100%;
+	margin: 0;
+	padding:0;
+	display: block;
+}
+
+#button2 img{
+ 	position:absolute;
+	margin-top: -50%;
+	padding:0;
+	width: 100%;
+	z-index:1;
+}
+
+#aging_vegefruits img{
+	width: 100%;
+	position: absolute;
+	margin-top: 0;
+	z-index: 5;
+	margin-top: -43%;
+}
+
+
+ /*immune content page */
+
+#immune_content{
+	width: 100%;
+	position:absolute;
+}
+
+img#immune_page {
+	width:100%;
+	margin: 0;
+	padding:0;
+	display: block;
+}
+
+#button3 img{
+ 	position:absolute;
+	margin-top: -50%;
+	padding:0;
+	width: 100%;
+	z-index:1;
+}
+
+#immune_vegefruits img{
+	width: 100%;
+	position: absolute;
+	margin-top: 0;
+	z-index: 5;
+	margin-top: -43%;
+}
+
+
+
+/* tired content page */
+
+#tired_content{
+	width: 100%;
+	position:absolute;
+}
+
+img#tired_page {
+	width:100%;
+	margin: 0;
+	padding:0;
+	display: block;
+}
+
+#button4 img{
+ 	position:absolute;
+	margin-top: -50%;
+	padding:0;
+	width: 100%;
+	z-index:1;
+}
+
+#tired_vegefruits img{
+	width: 100%;
+	position: absolute;
+	margin-top: 0;
+	z-index: 5;
+	margin-top: -43%;
+}
+
+/* skin content page */
+
+#skin_content{
+	width: 100%;
+	position:absolute;
+}
+
+img#skin_page {
+	width:100%;
+	margin: 0;
+	padding:0;
+	display: block;
+}
+
+#button5 img{
+ 	position:absolute;
+	margin-top: -50%;
+	padding:0;
+	width: 100%;
+	z-index:1;
+}
+
+#skin_vegefruits img{
+	width: 100%;
+	position: absolute;
+	margin-top: 0;
+	z-index: 5;
+	margin-top: -43%;
+}
+
+
+
+/*==================== mobile view ====================*/
+/*==================== mobile view ====================*/
+/*==================== mobile view ====================*/
+/*==================== mobile view ====================*/
+/*==================== mobile view ====================*/
+
+
+@media screen and (max-width : 400px) {
+
+	.mobileview{
+		opacity:1;
+		z-index: 10000;
+		position:relative;
+	}
+
+	 .mobile{
+	  	opacity:1;
+	  	position:relative;
+	}
+
+	.mobile img{
+		position: relative;
+		opacity:1;
+		width:100%;
+		height: 100%;
+		display:block;
+	}
+
+	#m_title img{
+		bottom:-2px;
+	}
+
+	#jars, #jars_select, .main, .pages{
+		opacity:0;
+		position: absolute;
+		width: 10%;
+	}
+	
+	.mobile_pages{
+		width:100%;
+		height: auto !important;
+	}
+
+	.mobile_pages img{
+		width:100%;
+		display:block;
+	}
+
+	.pages{
+		position: absolute;
+		width: 10%;
+	}
+
+	
+}
+
+
+
+/*dropdown*/
+
+#image-dropdown {
+    width:100%; height:100px; 
+        background:url(images/mobile/m_title.png) ;
+
+    -moz-transition: height 0.1s; 
+    -webkit-transition: height 0.1s; 
+    -ms-transition: height 0.1s;  
+    -o-transition: height 0.1s;  
+    transition: height 0.1s;
+
+}
+#image-dropdown input:checked + label {
+    opacity:1 !important; display:block;
+}
+#image-dropdown:hover {
+    height:600px;
+    overflow-y:scroll;
+    -moz-transition: height 0.5s; 
+    -webkit-transition: height 0.5s; 
+    -ms-transition: height 0.5s;  
+    -o-transition: height 0.5s;  
+    transition: height 0.5s;
+}
+#image-dropdown input {
+    position:absolute;top:0;left:0;opacity:0;
+}
+#image-dropdown label {
+    display:none; height:100px;
+    background:url(images/mobile/m_title.png) ;
+ }
+#image-dropdown:hover label{
+    display:block;
+}
+#image-dropdown label:hover {
+    opacity:0.8;
+}
+
+
