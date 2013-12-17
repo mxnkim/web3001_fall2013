@@ -1,0 +1,485 @@
+
+@import 'normalize.min.css';
+@import 'text.css';
+
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #539977;;
+}
+
+b {
+	font-weight: 500;
+}
+
+p a, p b a {
+	text-decoration: none;
+	color: #666666;
+}
+
+p a:hover, p b a:hover {
+	color:#3faca4;
+}
+
+h1 {
+	font-family: "fira_sans_otbold",sans-serif;
+	font-size: 70px;
+	text-transform:none;
+	color: #539977;
+	letter-spacing:-2px;
+}
+
+h2 {
+	margin-top: -10px;
+	padding: 5px 5px 5px 5px;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #e8e8e8;
+	color:#333333;
+}
+
+h2 a {
+	text-decoration: none;
+	color:#333333;
+}
+
+h2 a:hover {
+	color:#3faca4;
+}
+
+h3 {
+	font-size: 12px;
+	margin-bottom: 6px;
+	font-weight: 200;
+}
+
+.gold {
+	color:#EAC117;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+a {
+  color: #06c;
+}
+
+a:hover {
+  color: #c60;
+}
+
+small {
+  font-size: 11px;
+}
+
+/* ---------- Misc Classes ---------- */
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+/* ---------- Data Table ---------- */
+
+.data,
+.data th,
+.data td {
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.data {
+  border-width: 0 1px 1px;
+  width: 100%;
+}
+
+.data caption {
+  padding: 0 10px 5px;
+  text-transform: uppercase;
+}
+
+.data th,
+.data td {
+  border-top-width: 1px;
+  padding: 5px 10px;
+}
+
+.data th {
+  white-space: nowrap;
+}
+
+.data thead th {
+  background: #eee;
+  font-weight: bold;
+  text-shadow: #fff 0 1px 0;
+}
+
+.data tbody th {
+  width: 1px;
+}
+
+.data tr th:first-child {
+  text-align: right;
+}
+
+/* ---------- Code ---------- */
+
+pre,
+code {
+  font-size: 12px;
+  font-family: Menlo, Courier, monospace;
+}
+
+pre,
+.notice {
+  background: #ffe;
+  border: 1px solid;
+  border-color: #eed #ccb #bba #ddc;
+  overflow: auto;
+  padding: 10px 0 10px 10px;
+}
+
+* html pre {
+  overflow: hidden;
+  width: 97%;
+}
+
+code {
+  background: #ff9;
+  padding: 0 2px;
+}
+
+
+
+/* ---------- pages ---------- */
+
+#home { 
+    display:block; /* don't hide */
+}
+
+.page {
+    display:none; /* hidden initially */
+    /* position:fixed; */
+    top:0; bottom:0;
+    left:0; right:0;
+    width:100%; height:100%;
+    padding-top:3em; /* for nav */
+    background:white;
+    overflow:hidden;
+    padding-top:60px;
+}
+
+/* ---------- iframe ---------- */
+
+iframe { 
+    background:#ccd; /* see something while loading */
+}
+
+/* ---------- notice ---------- */
+
+.notice { 
+    position:fixed; 
+    top:20%; left:0; right:0;
+    padding:2em;
+    color:white;
+    background:rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+
+/* ---------- nav ---------- */
+
+header nav { 
+   position:fixed; 
+   top:0; left:0; right:0;
+   background:none;
+   z-index: 101; 
+}
+
+header nav a {
+   float:left;
+   width:33%;
+   padding:.5em 0;
+   color:white;
+   background:#525;
+   text-align:center;
+   text-decoration:none;
+   border:4px solid transparent;
+   border-width:4px 0;
+}
+
+header nav a:first-child { width:34%; }
+
+header nav a:hover { background:rgba(255,0,255,0.5); }
+
+header nav a.active { border-bottom-color:rgba(255,0,255,0.8); }
+
+
+
+
+@font-face {
+    font-family: 'coolvetica_rgregular';
+    src: url('../fonts/coolvetica_rg/coolvetica_rg-webfont.eot');
+    src: url('../fonts/coolvetica_rg/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coolvetica_rg/coolvetica_rg-webfont.woff') format('woff'),
+         url('../fonts/coolvetica_rg/coolvetica_rg-webfont.ttf') format('truetype'),
+         url('../fonts/coolvetica_rg/coolvetica_rg-webfont.svg#coolvetica_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sans_otbold';
+    src: url('../fonts/firasansot/firasansot-bold-webfont.eot');
+    src: url('../fonts/firasansot/firasansot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasansot/firasansot-bold-webfont.woff') format('woff'),
+         url('../fonts/firasansot/firasansot-bold-webfont.ttf') format('truetype'),
+         url('../fonts/firasansot/firasansot-bold-webfont.svg#fira_sans_otbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ---------- DIV Sticky ---------- */
+.sticky {
+	position:fixed;
+	width: 100%;
+	min-width: 960px;
+	background-color: #ff6f64 /* #f8f8f8 */;
+}
+
+
+/*----------  Header ---------- */
+header {
+	list-style-type:none;
+	overflow:hidden;
+	width:100%;
+	z-index: 9999;
+	height: 80px;
+	background-image: url('../images/lines.png');
+	opacity:1;
+	filter:alpha (opacity=100); /* For IE8 and earlier */
+}
+
+
+/*#headerbar {
+	border-bottom: 10px solid #addcb3;
+}*/
+
+
+
+/* ---------- Logo ---------- */
+#logo a {
+	background: url('../images/logo_ver4.png') no-repeat right top;
+	width:128px;
+	height:40px;
+	position:relative;
+	top:20px;
+	float:right;
+	margin-right: -770px;
+}
+
+/*#logo a:hover{
+   background-position: right 1px;
+}*/
+
+#space {
+	padding-top:90px;
+}
+
+#space-about {
+	padding-top:60px;
+}
+
+#space-home {
+	padding-top:20px;
+}
+
+#space-footer {
+	padding-top:10px;
+}
+
+
+/* ---------- Top Menu ---------- */
+
+ul, li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#menu {
+	position: relative;
+	top:-40px;
+	padding-right: 20px;
+	float:right;
+}
+
+#nav {
+	position: relative;
+	top:18px;
+	float:left;
+	margin-left: -200px;
+}
+
+#nav a, #device-top {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#nav a {
+	border: 0px solid #e5e5e5;
+	font-style: normal;
+	text-transform: capitalize;
+	font-size:13px;
+	color:#ffffff;
+	padding: 114px 15px 114px 15px;
+	text-decoration:none;
+}
+
+#nav a:link {
+	text-decoration:none !important;
+}
+
+#nav a:visited {
+	text-decoration:none !important;
+}
+
+#nav a:hover {
+	border: 0px solid #e5e5e5;
+	color: #ffffff;
+	background-color: #e24949;
+}
+
+#nav a:active {
+	border: 0px solid #e5e5e5;
+	color: #ffffff;
+	background-color: #920000;
+}
+
+#nav .selected {
+	border: 0px solid #e5e5e5;
+	color: #ffffff;
+	background-color: #920000;
+}
+				
+#nav ul {
+	float: left !important;
+}
+
+#nav li {
+	display: inline-block;
+}
+
+/* ---------- DIV Sticky ---------- */
+.sticky-footer {
+	position:relative;
+	bottom: 0px;
+	width: 100%;
+	/*background: url(transparent.png) repeat;*/
+	background-color: #f8f8f8;
+	border-bottom: 2px solid #d8d8d8;
+}
+
+/* ---------- Footer ---------- */
+footer {
+}
+
+
+
+/* ---------- About us ---------- */
+
+
+/* ----------Body 01 ---------- */
+#body01 {
+	background-color: #addbb1;
+	padding-top:60px;
+	/*
+padding-left: 20px;
+	padding-right: 20px;
+*/
+
+	width: 100%;
+	height: 720px;
+}
+
+.app-para {
+	z-index: 1;
+	float:left;
+	position: relative;
+	top: 160px;
+}
+
+#app-img-file {
+	background: url('../images/bag.png') no-repeat right top;
+	background-size: 400px auto;
+	width: 700px;
+	height: 459px;
+	position: relative;
+	top: -220px;
+	float:right;
+    margin-right: 35px;
+	z-index: 1;
+}
+
+
+/* ---------- Body 02 ---------- */
+#body02 {
+	background: url(../images/market.png) no-repeat center bottom;
+	background-size: 100% auto;
+	padding-top:30px;
+	width: 100%;
+	height: 670px;
+}
+
+.app-para2 {
+	z-index: 1;
+	float:left;
+	position: relative;
+	top: 80px;
+}
+
+/* ---------- menu2 ---------- */
+    #menu2 { position: absolute; top: 80px; right: 10px; width: 400px; height:60px; background: transparent; z-index:10;}
+    #menu2 a { 
+      margin: 15px 10px 0 0;
+      float: right;
+      vertical-align: baseline;
+      width: 70px;
+      padding: 10px;
+      text-align: center;
+      font: bold 11px "Helvetica",Arial;
+      line-height: normal;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #777777;
+      background: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #menu2 a.selected,
+    #menu2 a:hover { 
+      color: #F84F40;
+    }
